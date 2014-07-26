@@ -23,9 +23,7 @@ fi
 [[ -f ~/.Xmodmap ]] && xmodmap "${HOME}/.Xmodmap"
 
 # custom fonts
-xset +fp /usr/share/fonts/local/
-xset +fp /usr/share/fonts/TTF/
-xset +fp $HOME/.fonts/
+xset +dpms +fp /usr/share/fonts/local/,/usr/share/fonts/TTF/,$HOME/.fonts/
 xset fp rehash
 
 # turn off the annoying beep
