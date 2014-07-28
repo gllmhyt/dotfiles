@@ -17,21 +17,15 @@ fi
 # ...or the Window Manager of your choice
 
 # custom X settings
-[[ -f ~/.Xresources ]] && xrdb -merge "${HOME}/.Xresources"
+[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
 # keymapping
-[[ -f ~/.Xmodmap ]] && xmodmap "${HOME}/.Xmodmap"
+[[ -f ~/.Xmodmap ]] && xmodmap ~/.Xmodmap
 
 # custom fonts
-xset +dpms +fp /usr/share/fonts/local/,/usr/share/fonts/TTF/,$HOME/.fonts/
+xset +fp /usr/share/fonts/local
+xset +fp /usr/share/fonts/TTF/
 xset fp rehash
 
 # turn off the annoying beep
 xset b off
-
-# keyring
-if [ "$0" = "/etc/gdm/Xsession" ]; then
-    eval $(gnome-keyring-daemon --start --components=gpg,pkcs11,secrets,ssh)
-    export SSH_AUTH_SOCK GPG_AGENT_INFO GNOME_KEYRING_CONTROL GNOME_KEYRING_PID
-    export SSH_AGENT_PID=$GNOME_KEYRING_PID
-fi
