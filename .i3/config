@@ -153,26 +153,25 @@ bar {
 	position top
 
 	colors {
-                background #1d1f21
-                statusline #c5c8c6
+                background #2d2d2d
+                statusline #cccccc
 
                 # colorclass       border  backgr. text
-                focused_workspace  #373b41 #373b41 #c5c8c6
-                active_workspace   #373b41 #373b41 #c5c8c6
-                inactive_workspace #282a2e #282a2e #c5c8c6
-                urgent_workspace   #cc6666 #cc6666 #c5c8c6
+                focused_workspace  #515151 #515151 #cccccc
+                active_workspace   #515151 #515151 #cccccc
+                inactive_workspace #393939 #393939 #cccccc
+                urgent_workspace   #f2777a #f2777a #cccccc
         }
 }
 
 # class                 border  backgr. text    indicator
-client.focused          #373b41 #373b41 #c5c8c6 #2e9ef4
-client.focused_inactive #282a2e #282a2e #c5c8c6 #484e50
-client.unfocused        #282a2e #282a2e #c5c8c6 #292d2e
-client.urgent           #cc6666 #cc6666 #c5c8c6 #900000
-client.background       #1d1f21
+client.focused          #515151 #515151 #cccccc #2e9ef4
+client.focused_inactive #393939 #393939 #cccccc #484e50
+client.unfocused        #393939 #393939 #cccccc #292d2e
+client.urgent           #f2777a #f2777a #cccccc #900000
+client.background       #2d2d2d
 
 # autostart
-#exec --no-startup-id i3lock -c 1D1F21
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id xbindkeys
