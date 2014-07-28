@@ -175,6 +175,7 @@ client.background       #1d1f21
 #exec --no-startup-id i3lock -c 1D1F21
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
+exec --no-startup-id xbindkeys
 exec --no-startup-id nm-applet
 exec --no-startup-id urxvtd -q -o -f
 exec --no-startup-id udiskie

@@ -18,3 +18,4 @@ Dependencies
 * udiskie
 * NetworkManager
 * polkit-gnome, gnome-settings-daemon, seahorse (password management)
+* samsung-tools (in AUR) and xbindkeys
